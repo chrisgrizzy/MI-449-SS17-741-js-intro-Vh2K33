@@ -1,49 +1,50 @@
-var buttonElement = document.getElementById('button1')
-buttonElement.addEventListener('click', myfunction);
-buttonElement.addEventListener('mouseenter', myfunction);
-function myfunction(){
- audio1.play()
+
+var coinSound = new Audio('sounds/coin.wav')
+var powerupSound = new Audio('sounds/powerup.wav')
+var marioSound = new Audio('sounds/mario.wav')
+var hehooSound = new Audio('sounds/hehoo.wav')
+var weeheeSound = new Audio('sounds/weehee.wav')
+var yehooSound = new Audio('sounds/yehoo.wav')
+
+
+var coinElement = document.getElementById('coinButton')
+coinElement.addEventListener('click', playCoin);
+coinElement.addEventListener('mouseenter', playCoin);
+function playCoin(){
+ coinSound.play()
 }
 
-var buttonElement = document.getElementById('button2')
-buttonElement.addEventListener('click', myfunction2);
-buttonElement.addEventListener('mouseenter', myfunction2);
-function myfunction2(){
- audio2.play()
+var oneupElement = document.getElementById('oneupButton')
+oneupElement.addEventListener('click', playOneup);
+oneupElement.addEventListener('mouseenter', playOneup);
+function playOneup(){
+ powerupSound.play()
 }
 
-var buttonElement = document.getElementById('button3')
-buttonElement.addEventListener('click', myfunction3);
-buttonElement.addEventListener('mouseenter', myfunction3);
-function myfunction3(){
- audio3.play()
+var marioElement = document.getElementById('marioButton')
+marioElement.addEventListener('click', playMario);
+marioElement.addEventListener('mouseenter', playMario);
+function playMario(){
+ marioSound.play()
 }
 
-var buttonElement = document.getElementById('button4')
-buttonElement.addEventListener('click', myfunction4);
-buttonElement.addEventListener('mouseenter', myfunction4);
-function myfunction4(){
- audio4.play()
+var hehooElement = document.getElementById('hehooButton')
+hehooElement.addEventListener('click', playHehoo);
+hehooElement.addEventListener('mouseenter', playHehoo);
+function playHehoo(){
+ hehooSound.play()
 }
 
-var buttonElement = document.getElementById('button5')
-buttonElement.addEventListener('click', myfunction5);
-buttonElement.addEventListener('mouseenter', myfunction5);
-function myfunction5(){
- audio5.play()
+var weeheeElement = document.getElementById('weeheeButton')
+weeheeElement.addEventListener('click', playWeehee);
+weeheeElement.addEventListener('mouseenter', playWeehee);
+function playWeehee(){
+ weeheeSound.play()
 }
 
-var buttonElement = document.getElementById('button6')
-buttonElement.addEventListener('click', myfunction6);
-buttonElement.addEventListener('mouseenter', myfunction6);
-function myfunction6(){
- audio6.play()
+var yehooElement = document.getElementById('yehooButton')
+yehooElement.addEventListener('click', playYehoo);
+yehooElement.addEventListener('mouseenter', playYehoo);
+function playYehoo(){
+ yehooSound.play()
 }
-
-
-var audio1 = new Audio('sounds/coin.wav')
-var audio2 = new Audio('sounds/powerup.wav')
-var audio3 = new Audio('sounds/mario.wav')
-var audio4 = new Audio('sounds/hehoo.wav')
-var audio5 = new Audio('sounds/weehee.wav')
-var audio6 = new Audio('sounds/yehoo.wav')
